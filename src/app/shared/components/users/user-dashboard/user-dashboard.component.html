@@ -1,0 +1,23 @@
+
+
+<div class="row my-4">
+  <div class="col-12 d-flex justify-content-between align-items-center">
+    <h2 class="font-weight-bold text-success">Users</h2>
+
+    <button
+      routerLink="/users/addUser"
+      mat-raised-button color="primary">
+      + Add User
+    </button>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3 mb-4" *ngFor="let user of usersArr">
+        <app-user-card
+              [userObj]="user"></app-user-card>
+    
+    </div>
+</div>
+    
+

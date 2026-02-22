@@ -1,0 +1,16 @@
+
+
+<div class="card h-100">
+  <div class="card-body">
+    <h3><strong>{{ userObj.userName }} </strong></h3>
+    <br>
+    <p>{{userObj.profileDescription}}</p>
+  </div>
+  <div class="card-footer">
+    <button 
+    [routerLink]="['/users', userObj.userId]"
+    mat-stroked-button color="primary">
+      User Details...
+    </button>
+  </div>
+</div>
