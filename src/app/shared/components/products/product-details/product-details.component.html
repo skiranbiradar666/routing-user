@@ -1,1 +1,22 @@
-<p>product-details works!</p>
+
+
+
+<!-- <p>{{productObj | json}}</p> -->
+
+<div class="row">
+    <div class="col-12 mt-4">
+        <mat-card>
+            <img class="image-wrapper"
+            [src]="productObj.imageUrl">
+
+            <p class="m-0">{{productObj.description}}</p>
+
+            <p class="d-flex justify-content-between">
+                <button 
+                [routerLink]="['/products', productObj.pid, 'edit']"
+                mat-raised-button color="primary">Edit</button>
+                <button mat-raised-button color="warn">Remove</button>
+            </p>
+        </mat-card>
+    </div>
+</div>

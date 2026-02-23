@@ -11,7 +11,7 @@ export const products : Array<Iprod> = [
     stock: 25,
     rating: 4.6,
     description: '6.1-inch display, A15 Bionic chip, advanced dual-camera system',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNRMoxDTBiU9h4P0i5qkaCtLbLAtMOPDIrcw&s',
+    imageUrl: 'https://images.unsplash.com/photo-1680687688158-e9165395ff00?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fEFwcGxlJTIwaVBob25lJTIwMTR8ZW58MHx8MHx8fDA%3D',
     isActive: true,
     createdAt: '2025-01-15'
   },
@@ -24,7 +24,7 @@ export const products : Array<Iprod> = [
     stock: 40,
     rating: 4.5,
     description: 'Dynamic AMOLED display with Snapdragon processor',
-    imageUrl: 'assets/images/galaxy-s23.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1705530292519-ec81f2ace70d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8U2Ftc3VuZyUyMEdhbGF4eSUyMFMyM3xlbnwwfHwwfHx8MA%3D%3D',
     isActive: true,
     createdAt: '2025-01-20'
   },
@@ -37,7 +37,7 @@ export const products : Array<Iprod> = [
     stock: 15,
     rating: 4.8,
     description: 'Industry-leading noise cancellation headphones',
-    imageUrl: 'assets/images/sony-xm5.jpg',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6A8cLF0ODupC6v1YPlM4NZBpCr0bFbRh9XQ&s',
     isActive: true,
     createdAt: '2025-02-02'
   },
@@ -50,7 +50,7 @@ export const products : Array<Iprod> = [
     stock: 60,
     rating: 4.4,
     description: 'Lightweight running shoes with Air Max cushioning',
-    imageUrl: 'assets/images/nike-airmax.jpg',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv6F4_hVOKM0vSOA8GtZR2xB4bb3lPvQopIA&s',
     isActive: true,
     createdAt: '2025-02-05'
   },
@@ -63,7 +63,7 @@ export const products : Array<Iprod> = [
     stock: 10,
     rating: 4.3,
     description: 'Intel i5 processor, 16GB RAM, 512GB SSD',
-    imageUrl: 'assets/images/hp-pavilion.jpg',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7kgjD09FeJAr09HRO8WyZ15dW27QIP410RA&s',
     isActive: false,
     createdAt: '2025-02-10'
   }

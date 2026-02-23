@@ -1,1 +1,61 @@
-<p>product-form works!</p>
+
+
+<div class="row my-4">
+    <h2 class="alert alert-danger w-100">Product Form</h2>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <form [formGroup]="productForm" (ngSubmit)="onProductAdd()">
+
+                <div class="form-group">
+                    <label class="font-weight-bold" for="pname">Product Name <sup class="text-danger">*</sup></label>
+                    <input 
+                    formControlName="pname"
+                    type="text" class="form-control" id="pname">
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold" for="imgUrl">Image Url <sup class="text-danger">*</sup></label>
+                    <input 
+                    formControlName="imageUrl"
+                    type="text" class="form-control" id="imgUrl">
+                </div>
+
+                <div class="form-group">
+                    <label class="font-weight-bold" for="description">Description <sup class="text-danger">*</sup></label>
+                    <input 
+                    formControlName="description"
+                    type="text" class="form-control" id="description">
+                </div>
+
+                <div class="form-group">
+                    <label class="font-weight-bold" for="price">Price <sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control" id="price">
+                </div>
+
+                <div class="form-group">
+                    <label for="isActive" class="font-weight-bold">
+                      IsActive<sup class="text-danger">*</sup>
+                    </label>
+                     <select formControlName="isActive" class="form-control">
+                        <option [ngValue]="true">Yes</option>
+                        <option [ngValue]="false">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="isActive" class="font-weight-bold">
+                      Category<sup class="text-danger">*</sup>
+                    </label>
+                     <select formControlName="isActive" class="form-control">
+                        <option value="Electronics">Electronics</option>
+                        <option value="Accessories">Accessories</option>
+                        <option value="Footwear">Footwear</option>
+                        <option value="Computers">Computers</option>
+                    </select>
+                </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

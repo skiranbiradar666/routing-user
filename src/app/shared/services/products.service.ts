@@ -21,4 +21,11 @@ export class ProductsService {
     let product = this.productsArr.find(p => p.pid === id)!
     return of(product)
 }
+
+createProduct(prod : Iprod) : Observable<Iprod>{
+  let newProd = {...prod, productId : Date.now()}
+  this.productsArr.unshift(newProd)
+  return of(newProd)
+
+}
 }

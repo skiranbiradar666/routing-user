@@ -31,6 +31,16 @@ export class UserFormComponent implements OnInit {
   ngOnInit(): void {
     this.createUserForm()
     this.addSkills()
+    this.addressControl()
+          
+    this.onSkillEdit()
+    this.checkAddSame()
+    
+      
+  }
+
+  addressControl(){
+
     this.controls['address'].get('current')?.valueChanges
           .subscribe(res =>{
             if(this.controls['address'].get('current')?.valid){
@@ -44,19 +54,15 @@ export class UserFormComponent implements OnInit {
     this.controls['isAddSame'].valueChanges
             .subscribe(res =>{
               if(res){
-                let current = this.controls['current'].value;
-                this.controls['permanent'].patchValue(current)
-                this.controls['permanent'].disable({emitEvent : false})
+                let current = this.controls['address'].get('current')?.value;
+                this.controls['address'].get('permanent')?.patchValue(current)
+                this.controls['address'].get('permanent')?.disable({emitEvent : false})
               }else{
-                this.controls['permanent'].enable({emitEvent : false})
-                this.controls['permanent'].reset()
+                this.controls['address'].get('permanent')?.enable({emitEvent : false})
+                this.controls['address'].get('permanent')?.reset()
               }
             })
-          
-    this.onSkillEdit()
-    this.checkAddSame()
-    
-      
+
   }
 
   checkAddSame(){

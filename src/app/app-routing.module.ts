@@ -39,11 +39,11 @@ const appRoutes : Routes = [
         component : ProductFormComponent
     },
     {
-        path : 'products/:id',
+        path : 'products/:productId',
         component : ProductDetailsComponent
     },
     {
-        path : 'products/:id/edit',
+        path : 'products/:productId/edit',
         component : ProductFormComponent
     }
 ]
