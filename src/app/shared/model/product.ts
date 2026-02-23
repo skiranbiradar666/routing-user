@@ -1,8 +1,8 @@
 
 
 export interface Iprod{
-    id: number;
-    name: string;
+    pid: number;
+    pname: string;
     category: string;
     price: number;
     currency: string;

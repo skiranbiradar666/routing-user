@@ -3,21 +3,21 @@ import { Iprod } from "../model/product";
 
 export const products : Array<Iprod> = [
   {
-    id: 1,
-    name: 'Apple iPhone 14',
+    pid: 1,
+    pname: 'Apple iPhone 14',
     category: 'Electronics',
     price: 79999,
     currency: 'INR',
     stock: 25,
     rating: 4.6,
     description: '6.1-inch display, A15 Bionic chip, advanced dual-camera system',
-    imageUrl: 'assets/images/iphone14.jpg',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNRMoxDTBiU9h4P0i5qkaCtLbLAtMOPDIrcw&s',
     isActive: true,
     createdAt: '2025-01-15'
   },
   {
-    id: 2,
-    name: 'Samsung Galaxy S23',
+    pid: 2,
+    pname: 'Samsung Galaxy S23',
     category: 'Electronics',
     price: 74999,
     currency: 'INR',
@@ -29,8 +29,8 @@ export const products : Array<Iprod> = [
     createdAt: '2025-01-20'
   },
   {
-    id: 3,
-    name: 'Sony WH-1000XM5',
+    pid: 3,
+    pname: 'Sony WH-1000XM5',
     category: 'Accessories',
     price: 29999,
     currency: 'INR',
@@ -42,8 +42,8 @@ export const products : Array<Iprod> = [
     createdAt: '2025-02-02'
   },
   {
-    id: 4,
-    name: 'Nike Air Max 270',
+    pid: 4,
+    pname: 'Nike Air Max 270',
     category: 'Footwear',
     price: 12999,
     currency: 'INR',
@@ -55,8 +55,8 @@ export const products : Array<Iprod> = [
     createdAt: '2025-02-05'
   },
   {
-    id: 5,
-    name: 'HP Pavilion Laptop',
+    pid: 5,
+    pname: 'HP Pavilion Laptop',
     category: 'Computers',
     price: 65999,
     currency: 'INR',
