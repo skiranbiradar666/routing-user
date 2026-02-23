@@ -54,6 +54,7 @@ export class UserFormComponent implements OnInit {
             })
           
     this.onSkillEdit()
+    this.checkAddSame()
     
       
   }
@@ -63,14 +64,28 @@ export class UserFormComponent implements OnInit {
     let permanentAdd = this.controls['address'].get('permanent')?.value
     if(this.controls['address'].get('current')?.valid){
         this.controls['isAddSame'].enable({emitEvent : false})    
+    // }else{
+    //    this.controls['isAddSame'].disable({emitEvent : false}) 
     }
     const isSame = JSON.stringify(currentAdd) === JSON.stringify(permanentAdd)
 
-    if(isSame && this.controls['address'].get('current')?.valid){
-      this.controls['isAddSame'].setValue(true, {emitEvent : false})
+    // if(isSame && this.controls['address'].get('current')?.valid){
+    //   this.controls['isAddSame'].setValue(true, {emitEvent : false})
 
-      this.controls['address'].get('permanent')?.disable({emitEvent :false})
-    }
+    //   this.controls['address'].get('permanent')?.disable({emitEvent :false})
+      
+    // }
+
+    if (isSame && this.controls['address'].get('current')?.valid) {
+    this.controls['isAddSame'].enable({ emitEvent: false });
+    this.controls['isAddSame'].setValue(true, { emitEvent: false });
+    this.controls['address'].get('permanent')?.disable({ emitEvent: false });
+  } else {
+    
+    this.controls['isAddSame'].disable({ emitEvent: false });
+    this.controls['isAddSame'].reset(null, { emitEvent: false });
+    this.controls['address'].get('permanent')?.enable({ emitEvent: false });
+  }
   }
    
   createUserForm(){
